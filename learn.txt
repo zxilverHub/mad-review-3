@@ -1,0 +1,125 @@
+showModalBottomSheet(context: context, builder: (_)=>Text("This is modal"));
+
+Navigator.of(context).push(builder: (_) => AnotherScreen());
+
+TextField
+    keyboardType =  TextInputType.number || text
+
+
+showDatePicker(
+    context: context,
+    firstDate: DateTime(1950),
+    lastDate: DateTime.now(),
+).then((date) {
+    print(date);
+})
+
+void funName() async {
+    var date = await showDatePicker(
+        context: context,
+        firstDate: DateTime(1970),
+        lastDate: DateTime.now(),
+    );
+
+    setState((){
+        dateAdded = date;
+    })
+}
+
+
+/// 2 ///
+
+MediqQuery.of(context).size. width || height ||
+MediaQuery.of(context).orientation;
+MediaQuery.of(context).viewInsets.bottom;
+
+Dismissible(
+    dismissed: (direction) {
+        // do something
+
+        if(direction == DismissibleDirection.endToStart) {
+            // do something
+        }
+    }
+    key: Valuekey(value ?? item),
+    direction: ,
+    backgroun: Container(
+        color: Colors.red,
+    )
+)
+
+Align(
+    alignment: Alignment.center
+    child: Widget(),
+) 
+
+DateFormat.yMMMd().format(DateTime);
+
+var currencyFormat = NumberFormat.currency(
+  decimalDigits: 2, 
+  symbol: "P",
+)
+
+currencyFormat.format(number);
+
+ScaffoldMessenger.of(context).hideCurrentSnackBar();
+
+SnackBar(
+    content: Text(""),
+    action: SnackBarAction(
+        label: "Label",
+        onPressed: (){
+            // do something
+        },
+    )
+)
+
+
+/// 3 ///
+ListView(
+    children: []
+)
+
+ListView.builder(
+    itemCount: list.length,
+    builder: (_, index) => Widget(),
+)
+
+
+/// 4 ///
+
+//Theme
+MaterialApp(
+    theme: ThemeData(),
+    darkTheme: ThemeData.dark(),
+    themeMode: ThemeMode.system,
+)
+
+theme: ThemeData().copyWith(
+    colorShceme: ColorScheme.fromSeed(
+        seedColor: Colros.red,
+    ),
+)
+
+colorShceme: ColorScheme(
+    // propertiessss
+    primary: Colors.blue, // background
+    onPrimary: Colors.white // text
+)
+
+/// ----
+
+var myColor = ColorScheme.fromSeed(seedColor: Colors);
+
+MaterialApp(
+    theme: ThemeData().copyWith(
+        colorShceme: myColor,
+        cardTheme: CardTheme(
+            color: myColor.primary
+            foregroundColor: myColor.onPrimary
+        ),
+        evelevatedButtonThem: ElevetedButtonTheme.styleFrom(
+            color: myColor.primary,
+        )
+    )
+)
